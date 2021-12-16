@@ -1,24 +1,22 @@
 import "./styles.css";
 
+function showNames(people) {
+  return people[0] + " " + people[1];
+}
+
+let people = [
+  ["Victor", "Lymar"],
+  ["Traci", "Siebel"]
+];
+
+let names = people.map(showNames);
+console.log(names);
 export default function App() {
-  let elements = [];
-
-  let people = [
-    ["Victor", "Lymar"],
-    ["Traci", "Siebel"]
-  ];
-  for (let person of people) {
-    console.log(person);
-
-    let firstName = person[0];
-    let lastName = person[1];
-    elements.push(displayPerson(firstName, lastName));
-  }
   return (
     <div className="App">
       <h1>Class List</h1>
       <h2>Table</h2>
-      <div> {elements}</div>
+      <div> </div>
     </div>
   );
 }
