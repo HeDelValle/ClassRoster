@@ -1,7 +1,7 @@
 import "./styles.css";
 
 function showNames(people) {
-  return people[0] + " " + people[1];
+  return people[0] + " " + people[1] + " ";
 }
 
 let people = [
@@ -11,12 +11,13 @@ let people = [
 
 let names = people.map(showNames);
 console.log(names);
+let elements = names;
 export default function App() {
   return (
     <div className="App">
       <h1>Class List</h1>
       <h2>Table</h2>
-      <div> </div>
+      <div>{elements} </div>
     </div>
   );
 }
