@@ -60,4 +60,3 @@ let lastPerson = ["Hector", "Del Valle", "2022", "Yellow"];
 //console.log(eigthPerson);
 //console.log(ninthPerson);
 //console.log(tenthPerson);
-//console.log(lastPerson);
