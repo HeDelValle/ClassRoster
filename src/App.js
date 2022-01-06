@@ -4,9 +4,18 @@ function showNames(person) {
   return <div> {person.FirstName + " " + person.LastName} </div>;
 }
 //array of people
-let people =[
-  { FirstName: "Viktor", LastName: "Lymar"},
-{FirstName: "Traci", LastName: "Siebel" }
+let people = [
+  { FirstName: "Viktor", LastName: "Lymar" },
+  { FirstName: "Traci", LastName: "Siebel" },
+  { FirstName: "Ida", LastName: "Voong" },
+  { FirstName: "Ana", LastName: "Rivera" },
+  { FirstName: "Aiden", LastName: "Fuller" },
+  { FirstName: "Kyle", LastName: "Wan" },
+  { FirstName: "Enjun", LastName: "Li" },
+  { FirstName: "Luis", LastName: "Garcia" },
+  { FirstName: "Amanda", LastName: "Yu" },
+  { FirstName: "Yifei", LastName: "Du" },
+  { FirstName: "Hector", LastName: "Del Valle" }
 ];
 
 let names = [];
@@ -22,7 +31,6 @@ export default function App() {
     </div>
   );
 }
-
 
 //function to store the date
 function ClassRoster(first, last, year, color) {
