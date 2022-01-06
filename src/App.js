@@ -1,17 +1,18 @@
 import "./styles.css";
 
-function showNames(people) {
-  return people[0] + " " + people[1] + " ";
+function showNames(person) {
+  return <div> {person.FirstName + " " + person.LastName} </div>;
 }
-
-let people = [
-  ["Victor", "Lymar"],
-  ["Traci", "Siebel"]
+//array of people
+let people =[
+  { FirstName: "Viktor", LastName: "Lymar"},
+{FirstName: "Traci", LastName: "Siebel" }
 ];
 
-let names = people.map(showNames);
-console.log(names);
-let elements = names;
+let names = [];
+
+//code to show elements on screen
+let elements = people.map(showNames);
 export default function App() {
   return (
     <div className="App">
@@ -21,6 +22,8 @@ export default function App() {
     </div>
   );
 }
+
+
 //function to store the date
 function ClassRoster(first, last, year, color) {
   return first + " " + last + " " + year + " " + color;
